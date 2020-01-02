@@ -5,4 +5,4 @@ CREATE TABLE `contacts` (
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1;
 
-INSERT INTO `contacts` (`name`,`email`) VALUES ("Isac","isac@example.net"),("João","joao@example.net");
+INSERT INTO `contacts` (`name`,`email`) VALUES ("Isac","isac@example.net"),("joão Marcos","joaomarcos@example.net");
