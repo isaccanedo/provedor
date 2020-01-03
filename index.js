@@ -3,7 +3,7 @@ const app = express()
 const mysql = require('mysql2')
 const fs = require('fs')
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5432
 const connection = mysql.createConnection({
   host: 'us-cdbr-iron-east-02.cleardb.net',
   user: 'b4a233a820586a',
@@ -32,7 +32,7 @@ connection.connect(err => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hello DevPleno!')
+  res.send('Hello World!')
 })
 app.get('/contacts', (req, res) => {
   connection.query('select * from contacts', (err, rows) => {
